@@ -10,11 +10,15 @@ public class Player {
 		}
 
 		public void perfectPlay() {
-			play.getMatchesNumberToRemoveFromHeap();
+			play.chooseHisHeap();
 		}
 
 		public void play() {
 			play.getMatchesNumberToRemoveFromHeap();
+		}
+		
+		public String getPlayer(){
+			return this.player;
 		}
 		
 		private String player;
