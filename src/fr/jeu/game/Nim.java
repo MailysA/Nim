@@ -1,8 +1,11 @@
 package fr.jeu.game;
 
+import java.util.List;
+
 public class Nim {
 	
 	private Player[] players;
+	private List<Heap> board;
 	private Heap heap1;
 	private Heap heap2;
 	private Heap heap3;
@@ -15,6 +18,10 @@ public class Nim {
 		heap2 = new Heap(3);
 		heap3 = new Heap(5);
 		heap4 = new Heap(7);
+		board.add(heap1);
+		board.add(heap2);
+		board.add(heap3);
+		board.add(heap4);
 		
 		launchGame(players[0],players[1]);
 	}
